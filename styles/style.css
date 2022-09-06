@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+i{
+    cursor: pointer;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.6rem;
+    color: #222;
+}
+/* ::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background: blue; 
+} */
+header, nav{
+    position: relative;
+    font-size: 2rem;
+}
+header{
+    background-image: url('../images/05.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+nav, .nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul li, .sms-part i{
+    margin: 0 1rem;
+}
+nav a, nav i{
+    color: #fff;
+    position: relative;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -10%;
+    width: 0;
+    height: 2px;
+    background-color: #00a8ff;
+    transition: width .3s ease;
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -10%;
+    width: 0;
+    height: 2px;
+    background-color: #00a8ff;
+    transition: width .3s ease;
+}
+nav a:hover::after, nav a:hover::before{
+    width: 120%;
+}
+nav a:hover{
+    color: #00a8ff;
+}
+nav i:hover{
+    color: #00a8ff;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 6rem;
+    padding: 0 3rem;
+    transition: .4s ease;
+}
+nav.toptBot{
+    background-color: rgba(0,0,0,0.75);
+}
+.head-img{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+.head-text{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    max-width: 40%;
+}
+.head-text h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.head-text p{
+    opacity: .8;
+}
+
+/* Scroll animation */
+.scroll{
+    background-color: #fff;
+    color: #222;
+    box-shadow: 5px 4px 8px 3px rgba(0,0,0,0.32);
+}
+.scroll_for_a{
+    color: #222;
+}
+
+
+/* About Section*/
+
+.about, .offer, .contact{
+    position: relative;
+    padding: 10%;
+}
+.about p{
+    margin-top: 9rem;
+    letter-spacing: 2px;
+}
+.about h2, .offer h2, .contact h2 /*Offer Head and Contact Head Text is Here*/{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 10rem;
+    opacity: .3;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Offer Section*/
+.offer h2{
+    top: 5%;
+}
+.offer .main_text{
+    margin: 10rem 0 2rem;   
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 220px;
+    border: 1.5px solid #c2e1ff;
+    margin: 2rem 4rem 2rem 0;
+    border-radius: 30px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    transition: .4s ease;
+}
+.item h3{
+    margin: 3rem 0;
+}
+.item i{
+    color: #00a8ff;
+    font-size: 4rem;
+}
+.item a{
+    text-decoration: underline;
+    color: #000;
+}
+.item:hover{
+    background-color: #00a8ff;
+    color: #fff;
+}
+.item:hover i{
+    color: #fff;
+}
+
+ /* Contact Section*/
+ .contact{
+     padding-bottom: 2%;
+ }
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-part div, .nav-links-2 ul li, .sms-part-2 i{
+    margin-bottom: 1rem;
+}
+.contact-part div span{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+}
+.contact-part div i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #00a8ff;
+}
+.contact-part div a{
+    color: #222;
+}
+.contact-part div a:hover{
+    color: #00a8ff;
+}
+.nav-links-2 ul li a{
+    color: #222;
+    font-size: 2rem;
+}
+.sms-part-2 i{
+    font-size: 2rem;
+    background-color: #00a8ff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 1rem;
+}

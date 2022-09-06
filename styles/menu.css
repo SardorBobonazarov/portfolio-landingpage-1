@@ -1,0 +1,39 @@
+.res-menu{
+    position: fixed;
+    height: calc(100vh - 60px);
+    background-color: rgba(0, 0, 0, .75);
+    width: 100vw;
+    overflow-y: hidden;
+    top: -100vh;
+    animation: down 2s ease-in;
+    z-index: 2;
+    transition: 1s ease;
+    display: none;
+}
+.activated{
+    top: 60px;
+}
+.res-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+}
+.res-menu ul li{
+    margin-bottom: 70px;
+}
+.res-menu ul li a{
+    color: #fff;
+    font-size: 60px;
+}
+.res-menu .sms-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.res-menu .sms-part i{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 5rem;
+}
